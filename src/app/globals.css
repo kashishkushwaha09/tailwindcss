@@ -1,26 +1,120 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+ 
   font-family: Arial, Helvetica, sans-serif;
+}
+.FeatureSection{
+  background: url("/images/SchoolAura.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+
+}
+
+.feature-1{
+top: 2%;
+  right: 20%;
+  transform: translateY(-50%);
+}
+.feature-2{
+  top:25%;
+  right: 15%;
+  transform: translateY(50%);
+}
+.feature-3{
+  bottom: 20%;
+  left: 25%;
+}
+.feature-4{
+  top: 25%;
+  left:15%;
+  transform: translateY(50%);
+}
+@media (max-width: 1535px) {
+  .feature-1{
+  right: 13%;
+}
+.feature-2{
+   right: 9%;
+}
+.feature-4{
+    left: 8%;
+}
+.feature-3{
+  left: 18%;
+}
+}
+
+@media (max-width: 1279px) {
+  .feature-1{
+  right: 6%;
+}
+.feature-2{
+   right: 2%;
+}
+.feature-4{
+    left: 2%;
+}
+.feature-3{
+  left: 12%;
+}
+}
+
+/* md */
+@media (max-width: 1023px) {
+   .feature-1{
+  right:7%;
+}
+.feature-2{
+   right: -1%;
+}
+.feature-4{
+    left: -1%;
+}
+.feature-3{
+  left: 10%;
+}
+}
+
+/* sm */
+@media (max-width: 767px) {
+   .feature-1{
+  right:7%;
+}
+.feature-2{
+   right: 2%;
+}
+.feature-4{
+    left: 2%;
+}
+.feature-3{
+  bottom: 15%;
+}
+}
+
+/* mobile */
+@media (max-width: 639px) {
+   .feature-1{
+  right:7%;
+}
+.feature-2{
+   right: 5%;
+}
+.feature-4{
+    left: 5%;
+}
+}
+@media (max-width:576px) {
+   .feature-1{
+  top: 1%;
+  right: 2%;
+  transform: translateY(-60%);
+}
+.feature-3{
+  left:7%;
+  bottom: 10%;
+}
 }

@@ -1,65 +1,64 @@
 import Image from "next/image";
+const FeatureCard = () => {
+  return (
+    <div className="w-48 md:w-60 lg:w-75 rounded-xl bg-white p-2 md:p-3 lg:p-4 shadow-xl">
+      <div className="flex items-center gap-1 lg:gap-3">
+       
+        <div>
+          <p className="text-[0.5rem] md:text-[0.6rem] lg:text-xs leading-2 sm:leading-2 mb-0 text-gray-500 mt-1">
+            Real-time updates for students, parents, and teachers.
+            Fast & Secure Messaging
+          </p>
+          <h4 className="font-normal text-[0.6rem] md:text-[0.7rem] lg:text-sm">
+            students, parents, and teachers.
+          </h4>
+          
+        </div>
+         <div className="h-8 w-8 md:h-9 md:w-9 lg:h-12 lg:w-12 rounded-full bg-purple-500 flex-shrink-0"> </div>
+      </div>
+    </div>
+  );
+};
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <section className=" ">
+      <div className="FeatureSection container relative mx-auto mt-10 min-h-fit">
+         <div className="relative mt-20 mx-auto
+                            w-[55vw] h-[55vw]          
+    sm:w-[300px] sm:h-[300px]
+    md:w-[400px] md:h-[400px]
+    lg:w-[500px] lg:h-[500px]
+    xl:w-[600px] xl:h-[600px]
+                          ">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/images/mobile2.png"
+              alt="SchoolAura"
+              fill
+              className="object-cover"
+              priority
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+          </div>
+          {/* Top */}
+          <div className="feature-1 absolute">
+            <FeatureCard />
+          </div>
+
+          {/* Right */}
+          <div className="feature-2 absolute ">
+            <FeatureCard />
+          </div>
+
+          {/* Bottom */}
+          <div className="feature-3 absolute ">
+            <FeatureCard />
+          </div>
+
+          {/* Left */}
+          <div className="feature-4  absolute ">
+            <FeatureCard />
+          </div>
+      </div>
+    </section>
   );
 }
