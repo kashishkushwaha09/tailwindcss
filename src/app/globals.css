@@ -33,6 +33,10 @@ top: 2%;
   left:15%;
   transform: translateY(50%);
 }
+.software-card-1 .img,.software-card-4 .img {
+width:500px;
+height: 500px;
+}
 @media (max-width: 1535px) {
   .feature-1{
   right: 13%;
