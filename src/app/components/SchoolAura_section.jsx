@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Image from "next/image";
 const SchoolAura_section = () => {
   const featuresContent = [
@@ -26,47 +26,88 @@ const SchoolAura_section = () => {
 
   return (
     <section>
-      <div className="schoolAuraSection container relative mx-auto mt-10 min-h-125 bg-white grid 
-      grid-cols-3 gap-6 p-5">
-        <div className="bg-linear-to-r from-[#252ffd] to-[#06e3ff] rounded-xl p-6 col-span-2 software-card-1 flex gap-4">
-          <div className='flex justify-end flex-col text-white w-[60%]'>
-            <h4 className='font-medium text-2xl'>{featuresContent[0].title}</h4>
-            <span className='text-xs font-thin tracking-wide text-white/80'>{featuresContent[0].description}</span>
+      <div
+        className="schoolAuraSection container w-[90%] relative mx-auto my-10 bg-white grid 
+      grid-cols-3 gap-4"
+      >
+        <div className="bg-linear-to-r from-[#252ffd] to-[#06e3ff] rounded-3xl col-span-2 software-card-1 flex items-end gap-7">
+          <div className="flex justify-end flex-col text-white w-[55%] p-8">
+            <h4 className="font-medium text-2xl">{featuresContent[0].title}</h4>
+            <span className="text-xs font-thin tracking-wide text-white/80">
+              {featuresContent[0].description}
+            </span>
           </div>
-          <div className="relative img bg-white p-0 overflow-hidden">
-            <Image
-              src="/images/schoolAuraCourse.png"
-              alt="SchoolAura"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
-        <div className="bg-[#f7f7f7] rounded-xl p-6 software-card-2">Item 2</div>
-        <div className="bg-[#ffb742] rounded-xl p-6 software-card-3">Item 3</div>
-        <div className="bg-linear-to-r from-[#f0e4fa] to-[#fdcc7d] rounded-xl p-6 col-span-2 software-card-4">
-          <div className='flex flex-col'></div>
+          <div className="overflow-hidden h-95">
           <div className="relative img">
-            <Image
-              src="/images/schoolAuraCourse.png"
-              alt="SchoolAura"
-              fill
-              className="object-contain"
-            />
+    <Image
+      src="/images/schoolAuraCourse.png"
+      alt="SchoolAura"
+      fill
+      className="object-cover"
+    />
+</div>
+          </div>
+        </div>
+        <div className="bg-[#f7f7f7] rounded-3xl software-card-2">
+          <div className="p-2">
+          <div className="relative img">
+    <Image
+      src="/images/erpWeb.webp"
+      alt="SchoolAura"
+      fill
+      className="object-cover"
+    />
+          </div>
+          </div>
+    
+        <div className="flex justify-end flex-col text-black p-8">
+            <h4 className="font-medium text-2xl">{featuresContent[1].title}</h4>
+            <span className="text-xs font-thin tracking-wide text-black/80">
+              {featuresContent[1].description}
+            </span>
+          </div>
+         
+        </div>
+        <div className="bg-[#ffb742] rounded-3xl  software-card-3">
+        <div className="flex justify-end flex-col text-black p-8">
+            <h4 className="font-medium text-2xl">{featuresContent[2].title}</h4>
+            <span className="text-xs font-thin tracking-wide text-black/80">
+              {featuresContent[2].description}
+            </span>
+          </div>
+          <div className=" overflow-hidden h-51">
+          <div className="relative img -translate-y-7">
+    <Image
+      src="/images/iphone-16.png"
+      alt="SchoolAura"
+      fill
+      className="object-cover"
+    />
+          </div>
+          </div>
+        </div>
+        <div className="bg-linear-to-r from-[#f0e4fa] to-[#fdcc7d] rounded-3xl col-span-2 software-card-4 flex items-end gap-7">
+        <div className="flex justify-end flex-col text-black w-[45%] p-8">
+            <h4 className="font-medium text-2xl w-[80%]">{featuresContent[3].title}</h4>
+            <span className="text-xs font-thin tracking-wide text-black/80">
+              {featuresContent[3].description}
+            </span>
+          </div>
+          <div className="overflow-hidden h-95 w-[50%]">
+          <div className="relative img rotate-15 translate-y-10">
+    <Image
+      src="/images/schoolpage.png"
+      alt="SchoolAura"
+      fill
+      className="object-contain"
+    />
+</div>
           </div>
         </div>
       </div>
-      <div className="relative mt-16 w-full h-[400px] md:h-[500px] lg:h-[600px]">
-        <Image
-          src="/images/grid.png"
-          alt="SchoolAura"
-          fill
-          priority
-          className="object-contain translate-y-8"
-        />
-      </div>
-    </section>
-  )
-}
 
-export default SchoolAura_section
+    </section>
+  );
+};
+
+export default SchoolAura_section;
