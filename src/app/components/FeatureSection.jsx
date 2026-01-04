@@ -1,12 +1,14 @@
-import React from 'react'
+"use client";
+import React, { useEffect } from 'react'
 import Image from "next/image";
+useEffect
 const FeatureCard = () => {
   return (
     <div className="w-48 md:w-60 lg:w-75 rounded-xl bg-white p-2 md:p-3 lg:p-4 shadow-xl">
       <div className="flex items-center gap-1 lg:gap-3">
        
         <div>
-          <p className="text-[0.5rem] md:text-[0.6rem] lg:text-xs leading-2 sm:leading-2 mb-0 text-gray-500 mt-1">
+          <p className="text-[0.5rem] md:text-[0.6rem] lg:text-xs leading-2 sm:leading-4 mb-0 text-gray-500 mt-1">
             Real-time updates for students, parents, and teachers.
             Fast & Secure Messaging
           </p>
@@ -22,9 +24,9 @@ const FeatureCard = () => {
 };
 const FeatureSection = () => {
   return (
-   <section className=" ">
+   <section data-scroll-section className=" ">
       <div className="FeatureSection container relative mx-auto mt-10 min-h-fit">
-         <div className="relative mt-20 mx-auto
+         <div className="feature-center relative mt-20 mx-auto
                             w-[55vw] h-[55vw]          
     sm:w-[300px] sm:h-[300px]
     md:w-[400px] md:h-[400px]
